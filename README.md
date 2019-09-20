@@ -13,3 +13,7 @@
     * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/3/3.1.f95)
     * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/3/3.2.f95)
     * [Задание 3](https://github.com/avkolesavin/fortran-labs/blob/master/programs/3/3.3.f95)
+* Работа 4 (Оператор выбора)
+    * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/4/4.1.f95)
+    * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/4/4.2.f95)
+    * [Задание 3](https://github.com/avkolesavin/fortran-labs/blob/master/programs/4/4.3.f95)
