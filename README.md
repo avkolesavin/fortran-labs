@@ -21,3 +21,5 @@
     * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/5/5.1.f95)
     * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/5/5.2.f95)
     * [Задание 3](https://github.com/avkolesavin/fortran-labs/blob/master/programs/5/5.3.f95)
+* **Работа 6** (Массивы)
+    * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/6/6.1.f95)
