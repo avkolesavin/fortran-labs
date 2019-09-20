@@ -24,7 +24,6 @@ program pr4
   rN = rN * 12 + 1
   iN = int(rN)
 
-  ! print
   print '(a, i0)', 'Вам выпал номер ', iN
   call sleep(1)
 
@@ -41,20 +40,12 @@ program pr4
     
     print 200, 'КВАРТИРУ В МОСКВЕ!'
   case (2)
-    ! print 100, 'Вы выиграли... '
-    ! call sleep(2)
     print 200, 'ААААВТОМОБИЛЬ!'
   case (3)
-    ! print 100, 'Вы выиграли... '
-    ! call sleep(2)
     print 200, 'ТУРИСТИЧЕСКУЮ ПУТЕВКУ!'
   case (4)
-    ! print 100, 'Вы выиграли... '
-    ! call sleep(2)
     print 200, 'ЗУБНУЮ ЩЕТКУ!'
   case default
-    ! print 200, 'Вы выиграли... '
-    ! call sleep(2)
     print 200, 'К сожалению вы ничего не выиграли'
   end select 
   
