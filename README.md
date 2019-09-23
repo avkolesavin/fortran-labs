@@ -25,3 +25,7 @@
     * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/6/6.1.f95)
     * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/6/6.2.f95)
     * [Задание 3](https://github.com/avkolesavin/fortran-labs/blob/master/programs/6/6.3.f95)
+* **Работа 7** (Матрицы)
+    * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.1.f95)
+    * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.2.f95)
+    * [Задание 5](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.5.f95)
