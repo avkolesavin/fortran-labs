@@ -29,3 +29,6 @@
     * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.1.f95)
     * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.2.f95)
     * [Задание 5](https://github.com/avkolesavin/fortran-labs/blob/master/programs/7/7.5.f95)
+* **Работа 8** (Сортировка и анализ)
+    * [Задание 1](https://github.com/avkolesavin/fortran-labs/blob/master/programs/8/8.1.f95)
+    * [Задание 2](https://github.com/avkolesavin/fortran-labs/blob/master/programs/8/8.2.f95)
