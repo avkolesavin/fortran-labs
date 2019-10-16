@@ -50,7 +50,7 @@ program pr6
     end if
   end do
 
-  deallocate(arr)
+  ! deallocate(arr)
 
   print 100, repeat('-', 50)
   print '(a, 1000i3)', 'Сгенерированный массив: ', arr

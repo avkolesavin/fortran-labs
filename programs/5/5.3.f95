@@ -13,15 +13,20 @@ program pr5
   a_ = a
   b_ = b
 
+  print '(a, i0, a, i0, a)', "Прямоугольник со сторонами a=", a_, " и b=", b_, ' содержит'
+
   do
     if (a > b) then
       m = mod(a, b)
       squares = squares + a / b
+      print '(i0, " квадратов со сторонами ", i0, "х", i0)',  a / b, b, b
       a = b
       b = m
     else if (a < b) then
       m = mod(b, a)
       squares = squares + b / a
+      print '(i0, " квадратов со сторонами ", i0, "х", i0)', b / a, a, a
+
       b = m
     end if
 
@@ -30,7 +35,6 @@ program pr5
     end if
   end do
 
-  print '(a, i0, a, i0)', "Прямоугольник со сторонами a=", a_, " и b=", b_
   print '(a, i0, a)', 'содержит ', squares, ' квадратов'
   
 end program pr5

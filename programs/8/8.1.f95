@@ -4,11 +4,12 @@ program pr8
   100 FORMAT (a)
   200 FORMAT (a, $)
   300 FORMAT (a, ' элемент ', i0, '-й со значением ', f12.10)
-  400 FORMAT (10f13.10)
+  400 FORMAT (10f7.4)
+  500 FORMAT ('Алгоритм ', a, ' использует ' i0, ' перестановок')
 
-  REAL, allocatable :: arr(:)
+  REAL, allocatable :: arr(:), arr_(:)
   REAL :: rnd, tmp, minVal, maxVal
-  INTEGER :: i, j, n, minInd = 0, maxInd = 0
+  INTEGER :: i, j, n, minInd = 0, maxInd = 0, bubbleOps = 0, insertOps = 0
   LOGICAL :: sorted = .false.
 
   print 200, 'Введите размер массива от 5 до 100 элементов: '
@@ -55,39 +56,56 @@ program pr8
 
   !Сортировка
 
+  arr_ = arr
   !Пузырьком
-  ! do while (.not.sorted)
-  !   sorted = .true.
+  print 100, 'Сортировка пузырьком: '
+  do while (.not.sorted)
+    sorted = .true.
 
-  !   do i = lbound(arr, 1), ubound(arr, 1) - 1
-  !     if(arr(i) > arr(i + 1)) then
-  !       tmp = arr(i)
-  !       arr(i) = arr(i + 1)
-  !       arr(i + 1) = tmp
+    do i = lbound(arr_, 1), ubound(arr_, 1) - 1
+      if(arr_(i) > arr_(i + 1)) then
+        tmp = arr_(i)
+        arr_(i) = arr_(i + 1)
+        arr_(i + 1) = tmp
 
-  !       sorted = .false.
-  !     end if
-  !   end do
-  ! end do
+        bubbleOps = bubbleOps + 1
 
-  ! print 100, 'Отсортрованный массив по возрастанию (пузырьком):'
-  
-  ! Вставками
-  ! do i = lbound(arr, 1), ubound(arr, 1)
-  !   maxInd = i
-  !   do j = i, ubound(arr, 1)
-  !     if (arr(j) > arr(maxInd)) then
-  !       maxInd = j
-  !     end if
-  !   end do
-    
-  !   tmp = arr(i)
-  !   arr(i) = arr(maxInd)
-  !   arr(maxInd) = tmp
-  ! end do
+        sorted = .false.
+      end if
+    end do
+  end do
 
-  ! print 100, 'Отсортрованный массив по убыванию (вставками):'
+  print 100, 'Отсортрованный массив по возрастанию (пузырьком):'
   print 100, repeat('-', 40)
-  print 400, arr
+  print 400, arr_
+
+  print 100
+  
+  arr_ = arr
+  ! Вставками
+  print 100, 'Сортровка вставками: '
+  do i = lbound(arr_, 1), ubound(arr_, 1)
+    maxInd = i
+    do j = i, ubound(arr_, 1)
+      if (arr_(j) < arr_(maxInd)) then
+        maxInd = j
+      end if
+    end do
+    
+    tmp = arr_(i)
+    arr_(i) = arr_(maxInd)
+    arr_(maxInd) = tmp
+
+    insertOps = insertOps + 1
+  end do
+
+  print 100, 'Отсортрованный массив по врзрастанию (вставками):'
+  
+  print 100, repeat('-', 40)
+  print 400, arr_
+
+  print 100
+  print 500, 'пузырком', bubbleOps
+  print 500, 'вставками', insertOps
   
 end program pr8
