@@ -1,5 +1,5 @@
 {
   "ext": "*.f95",
   "verbode": true,
-  "exec": "gfortran -x f95 {{filename}} -o ./tmp/code && ./tmp/code"
+  "exec": "clear && gfortran -x f95 {{filename}} -o ./tmp/code && ./tmp/code"
 }
